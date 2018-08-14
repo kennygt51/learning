@@ -1,0 +1,12 @@
+[
+  { "_id": 1, "temperature": "飛び切り燗(55℃以上)" },
+  { "_id": 2, "temperature": "熱燗(50℃前後)" },
+  { "_id": 3, "temperature": "上燗(45℃前後)" },
+  { "_id": 4, "temperature": "ぬる燗(40℃前後)" },
+  { "_id": 5, "temperature": "人肌燗(35℃前後)" },
+  { "_id": 6, "temperature": "日向燗(30℃前後)" },
+  { "_id": 7, "temperature": "常温" },
+  { "_id": 8, "temperature": "涼冷え(15℃前後)" },
+  { "_id": 9, "temperature": "花冷え(10℃前後)" },
+  { "_id": 10, "temperature": "雪冷え(5℃前後)" }
+]
