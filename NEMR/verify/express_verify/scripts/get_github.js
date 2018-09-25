@@ -1,4 +1,12 @@
+require('date-utils');
+
 const puppeteer = require('puppeteer');
+
+var dt = new Date();
+var dt_formatted = dt.toFormat("YYYYMMDDHH");
+var dt_dict = {'get_datetime': dt_formatted};
+
+items_list = {'execute_datetime': dt_formatted};
 
 puppeteer.launch().then(async browser => {
     const page = await browser.newPage();
@@ -8,7 +16,7 @@ puppeteer.launch().then(async browser => {
     var data = await (await item.getProperty('innerHTML')).jsonValue()
     var data_parse = data.match(/\<h3>[\s\S]*?<\/h3>/g);
 
-    items_list = [];
+
 
 
     for (r in data_parse) {
